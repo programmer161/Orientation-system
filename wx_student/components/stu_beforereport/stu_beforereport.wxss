@@ -1,0 +1,54 @@
+/* pages/stu_beforereport/stu_beforereport.wxss */
+.top{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-bottom: 0.5rpx solid gainsboro;
+  /* border-top: 0.5rpx solid gainsboro; */
+}
+.line{
+  border-bottom: 0.5rpx solid gainsboro;
+}
+.info{
+  display: flex;
+  /* font-family: cursive; */
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 0.5rpx solid gainsboro;
+  font-size: 13px;
+}
+.info view{
+  flex: 1;
+  height: 20px;
+}
+.title{
+  /* font-size: 13px; */
+  color: gray;
+  padding-left: 10px;
+}
+.content{
+  font-size: 14px;
+  text-align: right;
+  
+}
+.have{
+  padding-right: 10px;
+}
+.submitbtn{
+  margin-left: 150px;
+  /* margin-right: auto; */
+  /* background-color: #1296DB; */
+  color: white;
+  font-size: 13px;
+  font-weight: lighter;
+  margin-top: 20px;
+}
+input{
+  height: 50px;
+}
+.text{
+  color: gray;
+  font-size: 12px;
+  display: inline-block;
+  padding-left: 4px;
+}

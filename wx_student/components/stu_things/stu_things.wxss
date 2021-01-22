@@ -1,0 +1,50 @@
+.title{
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+}
+.notice{
+  color: #666565;
+  /* margin-left: 85px; */
+  background-color:#eff1f0 ;
+  letter-spacing: 4rpx;
+  font-size: 13px;
+  padding: 20rpx 20rpx 20rpx 18rpx;
+  border: 0.5px #cfcece solid;
+}
+.big{
+  height: 100px;
+  border-top: 0.5px solid gainsboro;
+  border-bottom: 0.5px solid gainsboro;
+  margin-top: 20px;
+}
+.matter{
+  border-radius: 0.3em;
+  text-align: center;
+  margin-top: 10px;
+}
+.pic11{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  margin-top: -9px;
+  margin-left: -22px;
+}
+.arrow{
+  margin-top: 10px;
+  /* width: 5px; */
+  height: 30px;
+  text-align: center;
+}
+text{
+  font-size: 13px;
+  color: #666565;
+}
+.text-l{
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: #666565;
+}
+.arrow:last-child{
+  margin-bottom: 100px;
+}

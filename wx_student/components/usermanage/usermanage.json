@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "statistics":"../statistics/statistics",
+    "usermsg":"../usermsg/usermsg",
+    "adduser":"../adduser/adduser"
+  }
+}

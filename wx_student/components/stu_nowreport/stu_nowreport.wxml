@@ -1,0 +1,20 @@
+<!--pages/stu_nowreport/stu_nowreport.wxml-->
+<!-- <view class="notice">
+  <text>各位2020级新生请详细阅读录取通知书上的学院和校区信息，按时到校完成入学报道手续。</text>
+</view> -->
+<view class="shizishan">
+    <view >  
+        <image class="image" src="/image/shizishan.jpg" mode='widthFix' style="width:100%;"></image>
+  </view>
+  <view class="top">图1-狮子山校区</view>
+    <view class="sz-notice">校区地址：成都市锦江区静安路5号。</view>
+    <view class="sz-notice">注意事项：疫情原因，学生的陪同人员不能进入校园.学生需带好相关证件，测量体温后凭通知书一书一入。学生从校门进来后，先根据个人信息找到对应宿舍楼，拿到宿舍钥匙放置好行李。携带身份证和录取通知书到一教楼下找到对应的学院报道点，在网上缴清学费的学生可以直接排队报道领取一卡通和相关资料。绿色通道的学生需带好相关凭证，到绿色通道排队拿到报名许可，再到学院报道点注册报道。</view>
+</view>
+<view class="chenglong">
+  <view>  
+        <image class="image" src="/image/chenglong.jpg" mode='widthFix' style="width:100%;"></image>
+  </view>
+    <view class="top">图2-成龙校区</view>
+    <view class="cl-notice">校区地址：成都市龙泉驿区成龙大道1819号。</view>
+    <view class="cl-notice">注意事项：疫情原因，成龙校区西岑门暂不予开放。陪同家属不能进入校园。学生需携带好健康码，15日所在地登记表，以及录取通知书并测量体温后才能进入校园。学生从校门进来后，先根据个人信息找到对应宿舍楼，拿到宿舍钥匙放置好行李。携带身份证和录取通知书到训练馆找到对应的学院报道点，在网上缴清学费的学生可以直接排队报道领取一卡通和相关资料。绿色通道的学生需带好相关凭证，到绿色通道排队完成相关手续，再到学院报道点注册报道。</view>
+</view>

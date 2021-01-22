@@ -1,0 +1,19 @@
+<!--pages/report/report.wxml-->
+<view class="nav">
+  <view class="item" catchtap="onClick" data-id="0">
+    <image src="{{current == '0' ? '../../icon/tongji1.png' : '../../icon/tongji.png'}}" class="tt"></image>
+    <view class="{{current == '0' ? 'active' : ''}}" >报到统计</view>
+  </view>
+  <view class="item" catchtap="onClick" data-id="1">
+    <image src="{{current == '1' ? '../../icon/usermsg1.png' : '../../icon/usermsg.png'}}" class="tt"></image>
+    <view class="{{current == '1' ? 'active' : ''}}" >学生信息</view>
+  </view>
+  <view class="item" catchtap="onClick" data-id="2">
+    <image src="{{current == '2' ? '../../icon/add1.png' : '../../icon/add.png'}}" class="tt"></image>
+    <view class="{{current == '2' ? 'active' : ''}}" >新增学生</view>
+  </view>
+</view>
+<statistics wx:if="{{current == '0'}}"></statistics>
+<usermsg wx:elif="{{current == '1'}}"></usermsg>
+<adduser wx:elif="{{current == '2'}}"></adduser>
+

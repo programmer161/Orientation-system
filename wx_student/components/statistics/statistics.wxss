@@ -1,0 +1,20 @@
+/* pages/info/info.wxss */
+.report{
+  width: 255rpx;
+  font-size: large;
+  margin: auto;
+}
+.report1 {
+  width: 550rpx;
+  height: 550rpx;
+  margin-left: 80rpx;
+}
+.report2 {
+  width: 700rpx;
+  height: 700rpx;
+  margin-left: 40rpx;
+}
+.big{
+  z-index: -1 !important;
+  padding-bottom: 50px;
+}

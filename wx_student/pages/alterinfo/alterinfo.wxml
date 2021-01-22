@@ -1,0 +1,165 @@
+<!--pages/alterinfo/alterinfo.wxml-->
+<view class="top">修改基本信息</view>
+<view>
+  <view >
+    <view class="info">
+      <view class="title">学号</view>
+      <view class="content">
+        <input name="userName" bindblur="setUsername" value="{{info.userName}}"></input>
+    </view>
+    </view>
+    <view class="info">
+      <view class="title">姓名</view>
+      <view class="content">
+        <input name="name" bindblur="setName" value="{{info.name}}"></input>
+      </view>
+    </view>
+    <view class="info">
+      <view class="title">性别</view>
+      <view class="content">
+        <picker bindchange="setSex" value="{{index}}" range="{{sexlist}}">
+          {{info.sex}}
+        </picker>
+      </view>
+      <text class="text" wx:if="{{info.info!='已完成'}}">></text>
+    </view>
+    <view class="info">
+      <view class="title">出生日期</view>
+      <view class="content">
+        <picker mode="date" value="{{info.birth}}" start="1990-09-01" end="2021-09-01" bindchange="setBirth">
+        {{info.birth}}
+        </picker> 
+      </view>
+      <text class="text" wx:if="{{info.info!='已完成'}}">></text>
+    </view>
+    <view class="info">
+      <view class="title">身份证号</view>
+      <view class="content">
+        <input name="idnumber" bindblur="setIdnumber" value="{{info.idnumber}}"></input>
+      </view>
+    </view>
+    <view class="info">
+      <view class="title">民族</view>
+      <view class="content">
+        <picker bindchange="setNation" value="{{index1}}" range="{{nationlist}}">
+          {{info.nation}}
+        </picker>
+      </view>
+      <text class="text" wx:if="{{info.info!='已完成'}}">></text>
+    </view>
+    <view class="info">
+      <view class="title">宿舍楼</view>
+      <view class="content">
+        <picker bindchange="setDromm" value="{{index9}}" range="{{drommlist}}" class="item">
+          {{dromm}}
+        </picker>
+      </view>
+      <text class="text" wx:if="{{info.info!='已完成'}}">></text>
+    </view>
+    <view class="info">
+      <view class="title">宿舍号</view>
+      <view class="content">
+        <picker bindchange="setTungs" value="{{index10}}" range="{{tungslist}}" class="item">
+          {{tungs}}
+        </picker>
+      </view>
+      <text class="text" wx:if="{{info.info!='已完成'}}">></text>
+    </view>
+    <view class="info">
+      <view class="title">应届生</view>
+      <view class="content">
+        <picker bindchange="setStudenttype" value="{{index2}}" range="{{studenttypelist}}">
+          {{info.studenttype}}
+        </picker>
+      </view>
+      <text class="text" wx:if="{{info.info!='已完成'}}">></text>
+    </view>
+    <view class="info">
+      <view class="title">政治面貌</view>
+      <view class="content">
+        <picker bindchange="setPolitics" value="{{index3}}" range="{{politicslist}}">
+          {{info.politics}}
+        </picker>
+      </view>
+      <text class="text" wx:if="{{info.info!='已完成'}}">></text>
+    </view>
+    <view class="info">
+      <view class="title">辅导员姓名</view>
+      <view class="content">
+        <input name="instructname" bindblur="setInstructname" value="{{info.instructname}}"></input>
+      </view>
+    </view>
+    <view class="info line">
+      <view class="title">辅导员电话</view>
+      <view class="content">
+        <input name="instructphone" bindblur="setInstructphone" value="{{info.instructphone}}"></input>
+      </view>
+    </view>
+  </view>
+  <view>
+    <view class="info">
+      <view class="title">学院</view>
+      <view class="content">
+        <picker bindchange="setCollege" value="{{college}}" range="{{collegelist}}">
+          {{info.college}}
+        </picker>
+      </view>
+      <text class="text" wx:if="{{info.info!='已完成'}}">></text>
+    </view>
+    <view class="info">
+      <view class="title">年级</view>
+      <view class="content">
+        <picker bindchange="setGrade" value="{{index4}}" range="{{gradelist}}">
+          {{info.grade}}
+        </picker>
+      </view>
+      <text class="text" wx:if="{{info.info!='已完成'}}">></text>
+    </view>
+    <view class="info">
+      <view class="title">专业</view>
+      <view class="content">
+        <picker bindchange="setMajor" value="{{major}}" range="{{majorlist}}">
+          {{info.major}}
+        </picker>
+      </view>
+      <text class="text" wx:if="{{info.info!='已完成'}}">></text>
+    </view>
+    <view class="info">
+      <view class="title">班级</view>
+      <view class="content">
+        <picker bindchange="setClasses" value="{{index5}}" range="{{classeslist}}">
+          {{info.classes}}
+        </picker>
+      </view>
+      <text class="text" wx:if="{{info.info!='已完成'}}">></text>
+    </view>
+    <view class="info">
+      <view class="title">学制</view>
+      <view class="content">
+        <picker bindchange="setXuezhi" value="{{index6}}" range="{{xuezhilist}}">
+          {{info.xuezhi}}
+        </picker>
+      </view>
+      <text class="text" wx:if="{{info.info!='已完成'}}">></text>
+    </view>
+    <view class="info">
+      <view class="title">学习形式</view>
+      <view class="content">
+        <picker bindchange="setStudytype" value="{{index7}}" range="{{studytypelist}}">
+          {{info.studytype}}
+        </picker>
+      </view>
+      <text class="text" wx:if="{{info.info!='已完成'}}">></text>
+    </view>
+    <view class="info line">
+      <view class="title">学籍状态</view>
+      <view class="content">
+        <picker bindchange="setStudystate" value="{{index8}}" range="{{studystatelist}}">
+          {{info.studystate}}
+        </picker>
+      </view>
+      <text class="text" wx:if="{{info.info!='已完成'}}">></text>
+    </view>
+  </view>
+  <button type="default" class="submitbtn" bindtap="submit">确认修改</button>
+</view>

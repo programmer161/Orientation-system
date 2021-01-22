@@ -1,0 +1,40 @@
+<view>
+  <swiper indicator-dots="true" autoplay="true" >
+    <swiper-item>
+      <image src="/image/sicnu.jpg" style="width:100%" class="pic"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/image/sicnu1.png" style="width:100%" class="pic"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/image/sicnu2.png" style="width:100%" class="pic"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/image/sicnu3.png" style="width:100%" class="pic"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/image/sicnu4.png" style="width:100%" class="pic"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/image/sicnu5.png" style="width:100%" class="pic"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="title">
+  <view class="notice {{current_notice==1? 'active':''}}">
+    <text id="1" data-id="1" bindtap="tab">学校通知</text>
+  </view>
+  <view class="notice {{current_notice==2? 'active':''}}">
+    <text id="2" data-id="2" bindtap="tab">校园攻略</text>
+  </view>
+  <view class="notice {{current_notice==3? 'active':''}}">
+    <text id="3" data-id="3" bindtap="tab">缴费须知</text>
+  </view>
+  <view class="notice {{current_notice==4? 'active':''}}">
+    <text id="4" data-id="4" bindtap="tab">报到须知</text>
+  </view>
+</view>
+<notify wx:if="{{current_notice==1}}" class="value"></notify>
+<strategy wx:elif="{{current_notice==2}}" class="value"></strategy>
+<pay wx:elif="{{current_notice==3}}" class="value"></pay>
+<arrive wx:elif="{{current_notice==4}}" class="value"></arrive>

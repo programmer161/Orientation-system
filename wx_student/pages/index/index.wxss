@@ -1,0 +1,27 @@
+/* pages/report/report.wxss */
+.nav{
+  border:0.05rpx solid gainsboro;
+  display: flex;
+  position: fixed;  
+  width: 100%;  
+  bottom:0;  
+  background-color: white;
+  z-index: 10;
+}
+.active{
+  color:#1296DB;
+}
+.item{
+  flex: 1;
+  font-size: 12px;
+  text-align: center;
+}
+image{
+  height: 20px;
+  width: 20px;
+  /* margin-left: 15px; */
+  padding-top: 10px;
+}
+.None{
+  display: none;
+}

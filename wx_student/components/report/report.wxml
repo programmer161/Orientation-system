@@ -1,0 +1,29 @@
+<!--pages/report/report.wxml-->
+<view class="nav">
+  <view class="item" catchtap="onClick" data-id="0">
+    <image src="{{current == '0' ? '../../icon/info1.png' : '../../icon/info.png'}}" class="tt"></image>
+    <view class="{{current == '0' ? 'active' : ''}}" >信息确认</view>
+  </view>
+  <view class="item" catchtap="onClick" data-id="1">
+    <image src="{{current == '1' ? '../../icon/reportinfo1.png' : '../../icon/reportinfo.png'}}" class="tt"></image>
+    <view class="{{current == '1' ? 'active' : ''}}" >预填信息</view>
+  </view>
+  <view class="item" catchtap="onClick" data-id="2">
+    <image src="{{current == '2' ? '../../icon/reportnow1.png' : '../../icon/reportnow.png'}}" class="tt"></image>
+    <view class="{{current == '2' ? 'active' : ''}}" >现场报到</view>
+  </view>
+  <view class="item" catchtap="onClick" data-id="3">
+    <image src="{{current == '3' ? '../../icon/things1.png' : '../../icon/things.png'}}" class="tt"></image>
+    <view class="{{current == '3' ? 'active' : ''}}" >事务处理</view>
+  </view>
+  <view class="item" catchtap="onClick" data-id="4">
+    <image src="{{current == '4' ? '../../icon/pay1.png' : '../../icon/pay.png'}}" class="tt"></image>
+    <view class="{{current == '4' ? 'active' : ''}}" >学费支付</view>
+  </view>
+</view>
+<report-info wx:if="{{current == '0'}}"></report-info>
+<before-report wx:elif="{{current == '1'}}"></before-report>
+<now-report wx:elif="{{current == '2'}}"></now-report>
+<things wx:elif="{{current == '3'}}"></things>
+<pay wx:elif="{{current == '4'}}"></pay>
+

@@ -1,0 +1,41 @@
+<view class="container">
+<view class="big">
+  <view class="matter">
+    <image src="../../icon/relation.png" class="pic11"></image>
+    联系迎新志愿者
+    </view>
+<view class="arrow"><text>根据学校给出的名单联系自己对应的迎新志愿者。</text></view>
+</view>
+<view class="big">
+      <view class="matter">
+        <image src="../../icon/login.png" class="pic11"></image>
+        宿舍的登记入住</view>
+    <view class="arrow"><text>在宿管处登记基本信息，领取宿舍钥匙。每人仅限一把。</text></view>
+</view>
+  <view class="big">
+  <view class="matter">
+    <image src="../../icon/get.png" class="pic11"></image>
+    一卡通的领取</view>
+    <view class="arrow">
+      <text>在学院大本营成功登记报到后由志愿者发放。</text>
+    </view>
+  </view>
+  <view class="big">
+    <view class="matter">
+      <image src="../../icon/get1.png" class="pic11"></image>
+      学生证的领取</view>
+    <view class="arrow"><text>注册并盖章后由报到现场工作者发放。</text></view>
+  </view>
+  <view class="big">
+    <view class="matter">
+      <image src="../../icon/submit.png" class="pic11"></image>
+      上交身份证复印件</view>
+    <view class="arrow"><text>拍摄身份证或复印件照片，在迎新系统中上传。</text></view>
+  </view>
+  <view class="big">
+    <view class="matter">
+      <image src="../../icon/pay2.png" class="pic11"></image>
+      完成学费的支付</view>
+    <view class="arrow"><text class="text-l">在迎新系统中上传缴费凭据。</text></view>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+<!--pages/notice/notice.wxml-->
+<view>
+<text class="notice_value">{{noticeValue}}</text>
+</view>

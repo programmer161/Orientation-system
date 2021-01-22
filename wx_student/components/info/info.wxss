@@ -1,0 +1,107 @@
+/* pages/myinfo/myinfo.wxss */
+/* .content{
+  background-color:#f3f3f3;
+} */
+/* .nav{
+  background-color: #fff;
+} */
+
+.top {
+  border-radius: 50%;
+  overflow: hidden;
+  width:200rpx;
+  height: 200rpx;
+  position: relative;
+  background: pink;
+  margin: 0 auto;
+  margin-top: 10rpx;
+}
+
+.nickname{
+margin-bottom: 10rpx;
+text-align: center;
+}
+.item{
+height: 90rpx;
+background-color: #f3f3f3;
+margin: 20rpx;
+display: flex;
+border-radius: 20rpx;
+width: 550rpx;
+margin-left:100rpx;
+}
+.left{
+display: flex;
+justify-content: flex-start;
+flex-grow: 1;
+padding-top: 20rpx;
+padding-left:10px;
+line-height: 25px;
+}
+.right{
+display: flex;
+justify-content: flex-end;
+flex-grow: 1;
+color: gray;
+margin-right: 20rpx;
+padding-top: 20rpx;
+line-height: 25px;
+}
+
+.radio-box{
+  display: inline-block;
+  position: relative;
+  height: 15px;
+  line-height: 15px;
+  margin-right: 15px;
+  margin-top: 7.5rpx;
+  font-size: 36rpx;
+}
+.input-radio {
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  left: 0px;
+  outline: none;
+  -webkit-appearance: none;
+}
+.radio {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  vertical-align: middle;
+  cursor: pointer;
+  background: #D7D7D9;
+  
+}
+.on{
+    background: #1296DB;
+}
+lebel image{
+    width: 15px;
+    height: 15px;
+}
+
+.img_icon{
+  width:50rpx ;
+  height: 50rpx;
+  margin-left: 10px;
+}
+.img_info{
+  width:50rpx ;
+  height: 50rpx;
+  margin-left:5rpx;
+}
+.arrowhead{
+  color:#1296DB;
+}
+.item:last-child{
+  margin-bottom: 60px;
+}
+.logout{
+  margin-left: 96px;
+}

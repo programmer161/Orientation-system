@@ -1,0 +1,41 @@
+<!--pages/modify_info/modify_info.wxml-->
+<view class='big'>
+  <!-- <view class='top'>
+      <text class='edit'>编辑个人信息</text>
+  </view> -->
+    <view class='item'>
+      <view class='img_icon'><image src='../../icon/name.png ' class='img_info'></image></view>
+      <text class='left'>姓名：</text>
+      <view class="content">
+        <input type="text" value="{{info.name}}" bindblur="setName"></input>
+      </view>
+    </view>
+    <view class='item'>
+      <view class='img_icon'><image src='../../icon/sex.png ' class='img_info'></image></view>
+      <text class='left'> 性别：</text>
+      <view class='right content'>
+        <picker bindchange="setSex" value="{{index}}" range="{{sexlist}}">
+          {{info.sex}}
+        </picker>
+      </view>
+    </view>
+    <view class='item' >
+      <view class='img_icon'><image src='../../icon/mail.png ' class='img_info'></image></view>
+     <text class='left'> 邮箱：</text>
+     <view class="content">
+     <input type="email" class='right' value="{{info.email}}" placeholder="未绑定" bindblur='setemail'></input>
+    </view>
+    </view>
+    <view class='item'>
+      <view class='img_icon'><image src='../../icon/birth.png ' class='img_info'></image></view>
+      <text class='left'> 出生日期：</text>
+      <view class="content">
+        <picker mode="date" value="{{info.birth}}" start="1990-09-01" end="2021-09-01" bindchange="setBirth">
+        {{info.birth}}
+      </picker> 
+      </view> 
+    </view>
+    <button type="default" class="submitbtn" bindtap='save' style="width:205px">保存</button>
+</view>
+
+

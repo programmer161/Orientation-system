@@ -1,0 +1,44 @@
+/* pages/stu_nowreport/stu_nowreport.wxss */
+.notice{
+  /* height: 10px;
+  width: 100%; */
+  /* margin-top: 5px; */
+  font-size: 13px;
+}
+.shizishan{
+  margin-top: 20px;
+  border: 0.5px #cfcece solid;
+  /* background-color: #fdf9f9; */
+}
+.chenglong{
+  border: 0.5px #cfcece solid;
+  margin-bottom: 60px;
+}
+.sz-notice{
+  font-size: 13px;
+  /* background-color: rgb(233, 233, 233); */
+  padding: 10px;
+  padding-bottom: 0;
+  color: rgb(112, 112, 112);
+}
+.sz-notice:last-child{
+  padding-bottom: 10px;
+}
+.cl-notice{
+  font-size: 13px;
+  color: rgb(112, 112, 112);
+  padding: 10px;
+  padding-bottom: 0;
+}
+.cl-notice:last-child{
+  padding-bottom: 10px;
+}
+.image{
+  height: auto;
+  width: 90%;
+}
+.top{
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+}

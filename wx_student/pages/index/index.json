@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "home":"../../components/home/home",
+    "report":"../../components/report/report",
+    "usermanage":"../../components/usermanage/usermanage",
+    "info":"../../components/info/info"
+  }
+}

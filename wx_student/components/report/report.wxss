@@ -1,0 +1,26 @@
+/* pages/report/report.wxss */
+.active{
+  color:#1296DB;
+}
+.item{
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 22px;
+}
+.tt{
+  height: 20px;
+  width: 20px;
+  margin-left: 15px;
+}
+.None{
+  display: none;
+}
+.nav{
+  /* background-color: gainsboro; */
+  border:0.05rpx solid gainsboro;
+  width: 360px;
+  border-radius: 0.1em;
+  margin-left: 7.5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

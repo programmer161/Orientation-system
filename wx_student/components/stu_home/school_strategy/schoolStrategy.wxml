@@ -1,0 +1,4 @@
+<!--components/stu_home/school_strategy/schoolStrategy.wxml-->
+<view>
+  <view class="school_notify" wx:for="{{items}}" wx:for-item="item" id="{{item.id}}" wx:key="key" bindtap="item_notice">{{item.title}}</view>
+</view>

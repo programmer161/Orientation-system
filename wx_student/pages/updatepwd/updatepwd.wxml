@@ -1,0 +1,32 @@
+<!--pages/updatepwd/updatepwd.wxml-->
+<view class='container'>
+  <form bindsubmit='formSubmit'>
+    <view class='top'>
+      <view class='one_list'>
+        <view class='change'>
+          <view class=''>旧密码：</view>
+          <view>
+            <input password='true' name='oldpwd' placeholder="请输入旧密码" maxlength='20'></input>
+          </view>
+        </view>
+      </view>
+      <view class='one_list'>
+        <view class='change'>
+          <view class=''>新密码：</view>
+          <view>
+            <input password='true' name='newpwd' placeholder="请输入新密码" maxlength='20'></input>
+          </view>
+        </view>
+      </view>
+      <view class='one_list'>
+        <view class='change'>
+          <view class=''>确认密码：</view>
+          <view>
+            <input password='true' name='newpwd2' placeholder="请再次输入新密码" maxlength='20'></input>
+          </view>
+        </view>
+      </view>
+    </view>
+    <button type="default" form-type='submit'>提交</button>
+  </form>
+</view>

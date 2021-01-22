@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "notify":"../stu_home/school_notify/schoolNotify",
+    "strategy":"../stu_home/school_strategy/schoolStrategy",
+    "pay":"../stu_home/school_pay/schoolPay",
+    "arrive":"../stu_home/school_arrive/schoolArrive"
+  }
+}

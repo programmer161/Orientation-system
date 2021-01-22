@@ -1,0 +1,28 @@
+<!--pages/stu_things/stu_things.wxml-->
+<view>
+  <view class="count">
+    <text>管理人数：{{manager_count}}</text>
+  </view>
+  <view class="foundId">
+    <text class="id">学号：</text>
+    <input type="text" class="Input" name="userId" placeholder="待查找的学号信息" bindinput="userIdInput" placeholder-style="font-size: 12px;"/>
+    <button type="default" style="width:80px;height:30px;margin-left:10px;" bindtap="findId">查找</button>
+  </view>
+</view>
+<view class="details" wx:for="{{students}}" wx:key="index" bindtap="student_details" data-id="{{item.userName}}">
+  <view class="part">
+    <text class="part1 part3">{{item.college}}</text>
+    <view class="part4">
+      <text>></text>
+    </view>
+  </view> 
+  <view class="part">
+    <text class="part2">学号：</text><text class="part1">{{item.userName}}\n</text>
+  </view>
+  <view class="part">
+    <text class="part2">姓名：</text><text class="part1">{{item.name}}\n</text>
+  </view>
+  <view class="part">
+    <text class="part2">专业：</text><text class="part1">{{item.major}}</text>
+  </view> 
+</view> 

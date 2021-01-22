@@ -1,0 +1,21 @@
+<!--pages/info/info.wxml-->
+<view class="big">
+<view class="report">
+  <text>新生报到状况</text>
+</view>
+<view class="report1">
+  <ec-canvas id="canvas1" canvas-id="canvas1" ec="{{ec}}"></ec-canvas>
+</view>
+<view class="report">
+  <text>已完成报到状态</text>
+</view>
+<view class="report2">
+  <ec-canvas id="canvas2" canvas-id="canvas2" ec="{{eh}}"></ec-canvas>
+</view>
+<view class="report" style="margin-top:80rpx">
+  <text>未完成报到状态</text>
+</view>
+<view class="report2">
+  <ec-canvas id="canvas3" canvas-id="canvas3" ec="{{et}}"></ec-canvas>
+</view>
+</view>

@@ -1,0 +1,47 @@
+/* pages/alterinfo/alterinfo.wxss */
+.submitbtn{
+  margin-left: 150px;
+  /* margin-right: auto; */
+  /* background-color: #1296DB; */
+  color: white;
+  font-size: 13px;
+  font-weight: lighter;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.info {
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 0.5rpx solid gainsboro;
+  font-size: 13px;
+}
+.title{
+  width: 150px;
+  padding-left: 10px;
+  color: gray;
+}
+.content{
+  text-align: right;
+}
+input{
+  /* border:0.5rpx solid gainsboro; */
+  width: 200px;
+  height: 40px;
+}
+picker{
+  /* border:0.5rpx solid gainsboro; */
+  width: 200px;
+}
+
+.top{
+  text-align: center;
+  border-bottom: 0.5rpx solid gainsboro;
+  padding-bottom: 12px;
+}
+.text{
+  color: gray;
+  font-size: 12px;
+  display: inline-block;
+  padding-left: 4px;
+}

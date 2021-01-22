@@ -1,0 +1,43 @@
+<!--pages/info/info.wxml-->
+<view class='content'>
+  <view class='nav'>
+    <view class='top'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class='nickname'>
+      <open-data type="userNickName"></open-data> 
+    </view>
+  </view>
+    <view class='item'>
+      <view class='img_icon'><image src='../../icon/sno.png ' class='img_info'></image></view>
+      <text class='left'>学号：</text><text class='right'>{{info.userName}}</text>
+    </view>
+    <view class='item'>
+      <view class='img_icon'><image src='../../icon/name.png ' class='img_info'></image></view>
+      <text class='left'>姓名：</text><text class='right'>{{info.name}}</text>
+    </view>
+    <view class='item'>
+      <view class='img_icon'><image src='../../icon/sex.png ' class='img_info'></image></view>
+      <text class='left'> 性别：</text><text class='right'>{{info.sex}}</text>
+    </view>
+    <view class='item' bindtap='setemail'>
+      <view class='img_icon'><image src='../../icon/mail.png ' class='img_info'></image></view>
+     <text class='left'> 邮箱：</text><text class='right' wx:if="{{info.email==''|| info.email==null}}">未绑定</text><text class='right' wx:else>{{info.email}}</text>
+    </view>
+    <view class='item' bindtap='resetpwd'>
+      <view class='img_icon'><image src='../../icon/password1.png ' class='img_info'></image></view>
+     <text class='left'> 密码</text><text class='right'>重置</text>
+    </view>
+    <view class='item'>
+      <view class='img_icon'><image src='../../icon/date.png ' class='img_info'></image></view>
+     <text class='left'> 出生日期：</text><text class='right'>{{info.birth}}</text>
+    </view>
+    <view class='item' bindtap='modify'>
+      <view class='img_icon'><image src='../../icon/alter.png ' class='img_info'></image></view>
+      <text class='left'>编辑资料：</text><text class='right arrowhead'>>>></text>
+    </view>
+    <view class='item' bindtap='exit'>
+      <image src='../../icon/log_off.png ' class='img_info logout'></image>
+      <text class='left'>退出登录</text>
+    </view>
+</view>

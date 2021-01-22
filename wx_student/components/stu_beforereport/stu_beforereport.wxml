@@ -1,0 +1,40 @@
+<!--pages/stu_reportinfo/stu_reportinfo.wxml-->
+<view class="big">
+  <view class="top">预填报到信息</view>
+  <view >
+    <view class="info">
+      <view class="title">预计到校时间</view>
+      <view class="content {{info.reportinfo!='已完成'?'':'have'}}">
+        <picker mode="date" value="{{info.arrivetime}}" start="2020-09-01" end="2020-09-03" bindchange="setArrivetime" disabled="{{info.reportinfo=='已完成'}}">
+          {{info.arrivetime}}
+        </picker> 
+      </view>
+      <text class="text" wx:if="{{info.reportinfo!='已完成'}}">></text>
+    </view>
+    <view class="info">
+      <view class="title">到校交通方式</view>
+      <view class="content {{info.reportinfo!='已完成'?'':'have'}}">
+        <picker range="{{trafficlist}}" value="{{index}}" bindchange="setTraffic" disabled="{{info.reportinfo=='已完成'}}">
+          {{info.traffic}}
+        </picker> 
+      </view>
+      <text class="text" wx:if="{{info.reportinfo!='已完成'}}">></text>
+    </view>
+    <view class="info">
+      <view class="title">随行人员数量</view>
+      <view class="content {{info.reportinfo!='已完成'?'':'have'}}">
+        <picker range="{{entouragelist}}" value="{{index1}}" bindchange="setEntourage" disabled="{{info.reportinfo=='已完成'}}">
+          {{info.entourage}}
+        </picker>
+      </view>
+      <text class="text" wx:if="{{info.reportinfo!='已完成'}}">></text>
+    </view>
+    <view class="info">
+      <view class="title">其他</view>
+      <view class="content have">
+        <input name="other" bindblur="setOther" value="{{info.other}}" placeholder="无" disabled="{{info.reportinfo=='已完成'}}"></input>
+      </view>
+    </view>
+  </view>
+  <button type="default" class="submitbtn" catchtap="submit" wx:if="{{info.reportinfo!='已完成'}}">确认提交</button>
+</view>

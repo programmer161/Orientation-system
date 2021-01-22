@@ -1,0 +1,54 @@
+/* pages/stu_things/stu_things.wxss */
+.count{
+  /* width: 250rpx; */
+  margin-left: 40px;
+  margin-bottom: 20rpx;
+  font-size: 30rpx;
+  color: gray;
+  margin-top: 10px;
+}
+.Input{
+  height: 30px;
+  width: 280rpx;
+  border: 0.5rpx solid gray;
+  border-radius: 0.2em;
+}
+
+.foundId{
+  display: flex;
+  padding-left: 40px;
+}
+.details{
+  width: 600rpx;
+  margin-left: 80rpx;
+  margin-top: 20px;
+  border: 1px solid gainsboro;
+  border-radius: 0.2em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.part{
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  padding-left: 10px;
+}
+.part1{
+  padding-top: 100rpx;
+}
+.part2{
+  color: grey;
+}
+.part3{
+  font-size: 40rpx;
+}
+.part4{
+  display: inline-block;
+  margin-left: 130px;
+  color: grey;
+}
+button{
+  font-size: 13px;
+}
+.id{
+  color: gray;
+}

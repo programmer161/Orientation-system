@@ -1,0 +1,28 @@
+.pic{
+  height: 210px;
+}
+.title{
+  margin-top: 20px;
+  border-top: 0.5rpx solid gainsboro;
+  display: flex;
+  /* background-color: ; */
+  border-bottom: 0.5rpx solid gainsboro;
+  
+}
+.notice{
+  padding-top: 10px;
+  flex: 1;
+  text-align: center;
+  padding-bottom: 10px;
+  color: gray;
+}
+.active{
+  border-bottom: 2px solid #1296DB;
+  color: #1296DB;
+}
+swiper{
+  margin-top: 10px;
+}
+.value{
+  font-size: 14px;
+}

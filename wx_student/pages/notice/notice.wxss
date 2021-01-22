@@ -1,0 +1,9 @@
+/* pages/notice/notice.wxss */
+.notice_value{
+  text-overflow:ellipsis;
+  word-wrap:break-word;
+}
+view{
+  /* width: 100%; */
+  padding: 10px;
+}

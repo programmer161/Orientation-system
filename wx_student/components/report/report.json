@@ -1,0 +1,10 @@
+{
+  "component":true,
+  "usingComponents": {
+    "before-report":"../stu_beforereport/stu_beforereport",
+    "report-info":"../stu_reportinfo/stu_reportinfo",
+    "now-report":"../stu_nowreport/stu_nowreport",
+    "things":"../stu_things/stu_things",
+    "pay":"../stu_pay/stu_pay"
+  }
+}

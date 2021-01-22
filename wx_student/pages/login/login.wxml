@@ -1,0 +1,25 @@
+<!--pages/login/login.wxml-->
+<view class="big">
+  <view class='nav'>
+    <view class='top'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class='nickname'>
+      <open-data type="userNickName"></open-data> 
+    </view>
+  </view>
+<view class="info">
+  <!-- <view class="title"> -->
+    <image src="../../icon/username.png"  class="img1"></image>
+  <!-- </view> -->
+  <input type="text" class="conent" bindblur="getUsername" placeholder="用户名为学号" placeholder-style="font-size: 12px;"></input>
+</view>
+<view class="info">
+  <!-- <view class="title"> -->
+    <image src="../../icon/password.png"class="img1"></image>
+  <!-- </view> -->
+  <input type="password" class="conent" bindblur="getPassword" placeholder="初始密码为身份证后六位" placeholder-style="font-size: 12px;"></input>
+</view>
+<button type="default" class="submitbtn" bindtap="login" style="width:205px">登录</button>
+<!-- <view class="forget" bindtap="forget">忘记密码</view> -->
+</view>

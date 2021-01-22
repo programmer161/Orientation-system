@@ -1,0 +1,13 @@
+<home wx:if="{{index1==0}}"></home>
+<report wx:elif="{{index1==1}}"></report>
+<usermanage wx:elif="{{index1==2}}"></usermanage>
+<info wx:elif="{{index1==3}}"></info>
+
+<view class="nav" >
+  <view class="item {{item.flag?'':'None'}}" wx:for="{{tabBar.list}}" wx:key="pagePath">
+    <view catchtap="onClick" data-index="{{index}}" >
+    <image src="{{item.index==index1 ? item.selectedIconPath : item.iconPath}}"></image>
+    <view class="{{item.index==index1 ? 'active' : ''}}" >{{item.text}}</view>
+  </view>
+  </view>
+</view>

@@ -1,0 +1,82 @@
+<view class="big">
+  <view class="top">基本信息</view>
+  <navigator url="../../pages/alterinfo/alterinfo?id={{id}}" class="alterbtn" hover-class="navigator-hover" wx:if="{{info.info!='已完成'}}">编辑</navigator>
+  <view class="little">
+    <view class="info">
+      <view class="title">学号</view>
+      <view class="content">{{info.userName}}</view>
+    </view>
+    <view class="info">
+      <view class="title">姓名</view>
+      <view class="content">{{info.name}}</view>
+    </view>
+    <view class="info">
+      <view class="title">性别</view>
+      <view class="content">{{info.sex}}</view>
+    </view>
+    <view class="info">
+      <view class="title">出生日期</view>
+      <view class="content">{{info.birth}}</view>
+    </view>
+    <view class="info">
+      <view class="title">身份证号</view>
+      <view class="content">{{info.idnumber}}</view>
+    </view>
+    <view class="info">
+      <view class="title">民族</view>
+      <view class="content">{{info.nation}}</view>
+    </view>
+    <view class="info">
+      <view class="title">宿舍</view>
+      <view class="content">{{info.drom}}</view>
+    </view>
+    <view class="info">
+      <view class="title">应届生</view>
+      <view class="content">{{info.studenttype}}</view>
+    </view>
+    <view class="info">
+      <view class="title">政治面貌</view>
+      <view class="content">{{info.politics}}</view>
+    </view>
+    <view class="info">
+      <view class="title">辅导员姓名</view>
+      <view class="content">{{info.instructname}}</view>
+    </view>
+    <view class="info line">
+      <view class="title">辅导员电话</view>
+      <view class="content">{{info.instructphone}}</view>
+    </view>
+  </view>
+  <view class="top">学籍信息</view>
+  <view class="little">
+    <view class="info">
+      <view class="title">学院</view>
+      <view class="content">{{info.college}}</view>
+    </view>
+    <view class="info">
+      <view class="title">年级</view>
+      <view class="content">{{info.grade}}</view>
+    </view>
+    <view class="info">
+      <view class="title">专业</view>
+      <view class="content">{{info.major}}</view>
+    </view>
+    <view class="info">
+      <view class="title">班级</view>
+      <view class="content">{{info.classes}}</view>
+    </view>
+    <view class="info">
+      <view class="title">学制</view>
+      <view class="content">{{info.xuezhi}}</view>
+    </view>
+    <view class="info">
+      <view class="title">学习形式</view>
+      <view class="content">{{info.studytype}}</view>
+    </view>
+    <view class="info line">
+      <view class="title">学籍状态</view>
+      <view class="content">{{info.studystate}}</view>
+    </view>
+  </view>
+  <button type="default" class="submitbtn" catchtap="submit" wx:if="{{info.info!='已完成'}}">确认无误</button>
+</view>

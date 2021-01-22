@@ -1,0 +1,15 @@
+<!--pages/stu_pay/stu_pay.wxml-->
+<view>
+  <view class="pay">
+    <text>请上传学生支付单据</text>
+  </view>
+  <image src="{{tempFilePaths}}" class="pay_photo"></image>
+  <button size="mini" class="btnConfirm" type="primary" bindtap="chooseimage">获取图片</button>
+</view>
+<view>
+  <view class="pay">
+    <text>请上传学生身份照片</text>
+  </view>
+  <image src="{{tempFilePaths_other}}" class="pay_photo"></image>
+  <button size="mini" class="btnConfirm" type="primary" bindtap="chooseimage_other">获取图片</button>
+</view>

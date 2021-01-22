@@ -1,0 +1,7 @@
+/* components/stu_home/school_notify/schoolNotify.wxss */
+.school_notify{
+  border-bottom: 1rpx solid gainsboro;
+  padding-top: 20rpx;
+  padding-left: 30rpx;
+  padding-bottom: 10px;
+}
