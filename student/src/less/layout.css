@@ -1,0 +1,36 @@
+/* 引入其整体的div布局 */
+
+.whole {
+    background-color: #F4F8F6;
+    width: 1000px;
+    border-radius: 3px;
+    border: 0.2px solid gainsboro;
+    position: relative;
+    /* left: 10px; */
+    /* margin-top: 10px; */
+}
+
+.title {
+    font-size: 32px;
+    padding: 0%;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    top: 15px;
+    left: 400px;
+    margin-bottom: 0.5%;
+}
+
+.Biao {
+    width: 79%;
+    position: relative;
+    left: 10%;
+}
+
+.el-button {
+    padding: 10px 10px;
+}
+
+.el-main {
+    overflow-x: hidden;
+}
